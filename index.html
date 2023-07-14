@@ -159,21 +159,38 @@
 
             </ol>
         </ul>
-        <h3>Git Commands - Steps for New Branch to Pull Request</h3>
+        <h3>Git Commands - Steps for New Branch to Merge Pull Request</h3>
         <ul>
             <ol>
-            <li> In terminal or command line - type git checkout -b feature/"new branch name"</li>
+            <h3>In terminal or Command Line</h3>
+            <li>Navigate to project directory </li>
+            <li>Command git status  - to check which branch you're working in, should be main</li>
+            <ul>
+                <li>If not in main, enter Git Command git checkout main</li>
+            </ul>
+            <li>git checkout -b feature/"new branch name"</li>
             <ul>
                 <li>“git checkout” switches to a branch, “-b” tells git to make new branch, “/new branch name” is the name of the new branch</li>
             </ul>
-            <li>git add -A - Stages all changes, IE prepares it to be commited  - MUST DO BEFORE COMMITTING</li>
-            <li>git commit -m "brief description of changes" - </li>
+            <h3>Open Text Editor</h3>
+            <li>For VS Code, use command code .</li>
+            <li>make changes or adds, then save</li>
+            <h3>In Terminal or Command Line</h3>
+            <li> Use command git add -A - Stages all changes, IE prepares it to be commited  - MUST DO BEFORE COMMITTING</li>
+            <li> Then command git commit -m "brief description of changes" - </li>
             <ul>
                 <li>We use the -m flag to associate a message with our commit. Commit messages should be short descriptive messages of the changes implemented. Once completed, our Git repository is now up to date with our working directory</li>
             </ul>
-            <li>git pull origin main - To pull the source from GitHub to make sure you have the latest commits and changes to avoid conflicts.</li>
-            <li>git push origin feature/new branch name - commit to branch</li>
-            <li>Open GitHub, Select Compare & Pull Request, check base and compare for correct location, update title & description, and create pull request </li>
+            <li>Command git pull origin main - To pull the source from GitHub to make sure you have the latest commits and changes to avoid conflicts.</li>
+            <li>Command git push origin feature/new branch name - commit to branch</li>
+            <h3>Open GitHub</h3>
+            <li>Navigate to repository, Select Compare & Pull Request, check base and compare for correct location, update title & description, and create pull request </li>
+            <li> Navigate to pull request and merge if no conflicts</li>
+            <li> delete branch</li>
+            <h3>In terminal or Command Line</h3>
+            <li>Update your local repository with command git checkout main then command git pull origin main</li>
+            <h3>Open GitHub</h3>
+            <li>Close Issue</li>
             </ol>
           </ul>
         <h3>Basic Git Commands</h3>
